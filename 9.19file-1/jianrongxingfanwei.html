@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>范围</title>
+	<script src="js/jianrongxingfanwei.js"></script>
+</head>
+<body>
+    <div class="one">
+		<div class="box"></div>
+	</div>
+	<div id="box"></div>
+	<div class="box"></div>
+	<script>
+		window.onload=function(){
+           var one = getClass('one'); //先获取类名为one的div
+           var box =getClass('box',one[0]); // 给了它一个限定范围
+           for(var i=0;i<box.length;i++){
+           	box[i].innerHTML='这是一个box';
+           }
+		}
+	</script>
+</body>
+</html>

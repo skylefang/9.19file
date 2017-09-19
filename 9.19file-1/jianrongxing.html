@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>解决IE低版本兼容性</title>
+    <script src="js/jianrongxing.js"></script>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box box1 box2"></div>  
+	<div class="box2 box1"></div>
+	<div class="box1"></div>
+	<div class="box box1"></div>
+	<script>
+		window.onload=function(){
+			var box=getClass('box'); //调用
+			for(var i=0;i<box.length;i++){
+				box[i].innerHTML='这是一个名叫box的div';
+			}			
+			// console.log(box);
+		}
+	</script>
+
+</body>
+</html>

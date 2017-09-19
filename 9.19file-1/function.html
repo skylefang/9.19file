@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/function.js"></script>
+</head>
+<body>
+	<div class="one">
+		<div class="box"></div>
+	</div>
+	<div id="box"></div>
+	<div class="box"></div>
+	<script>
+		window.onload=function(){
+			$('#box').innerHTML='这是一个id';
+			// $('.one')[0].innerHTML='这是一个类名为box的div';
+			var divs = $('div');
+			// divs[2].innerHTML='这是一个类名为box的div';
+			console.log(divs.length);
+			$('.one')[0].innerHTML='这是一个类名为box的div';
+		}
+	</script>
+</body>
+</html>
